@@ -1,0 +1,187 @@
+html,body{
+  height: 100%;
+  width:100%;
+  margin: 0;
+  display: flex;
+  background-color: #000000;
+  overflow: hidden;
+  overflow-x:hidden;
+}
+.cardCont{
+  top:20%;
+  left:30%;
+  width: 40%;
+  height: 60%;
+  position: absolute;
+      perspective: 2000px;
+}
+.downFace{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  transition: transform 0.4s;
+  transform-origin: 0 0;
+  font-family: scripty;
+}
+.upFace{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: wheat; */
+  transition: transform 0.4s;
+  transform-origin: 0 0;
+  /* background-image:
+  radial-gradient(#CCC7B9 20%, transparent 0),
+  radial-gradient(#CCC7B9 20%, transparent 0); */
+background-size: 50px 50px;
+background-position: 0 0, 25px 25px;
+}
+.hoverTarget{
+  top:20%;
+  left:30%;
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  z-index: 100;
+}
+.textCont{
+  height: 60%;
+  width: 100%;
+  padding: 40px;
+  padding-left: 60px;
+}
+.toName{
+  font-size: 80px;
+}
+h1{
+  font-family:scripty;
+}
+.company{
+  margin-top: auto;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.credit{
+  margin-right: auto;
+  font-family: Arial;
+}
+.instructions{
+  margin-left: auto;
+  font-family: Arial;
+}
+.from{
+  width: 95%;
+  text-align: right;
+  position: absolute;
+  font-size: 30px;
+  bottom: 0;
+  font-family: scripty;
+}
+.wishesText{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+    font-family: sweet;
+}
+.whishes{
+  font-family: sweet;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 28px;
+  width: 70%;
+}
+.img{
+  width: 25%;
+  margin-left: 2.5%;
+  background-color: red;
+  height: 70%;
+}
+.toolbar{
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  background-color:gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.share{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.shareImg{
+  margin:auto;
+  height: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .img{
+    height: 70%;
+  }
+  .whishes{
+    font-size: 23px;
+  }
+  .wishesText{
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .img{
+    height: 70%;
+  }
+  .whishes{
+    font-size: 23px;
+  }
+  .cardCont{
+    width: 60%;
+    left:20%;
+  }
+  .hoverTarget{
+    width: 60%;
+    left:20%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img{
+    height: 70%;
+  }
+  .whishes{
+    font-size: 23px;
+  }
+  .cardCont{
+    width: 80%;
+    left:10%;
+  }
+  .hoverTarget{
+    width: 80%;
+    left:10%;
+  }
+}
+@font-face{
+  font-family: scripty;
+  src: url(HaloHandletter.otf);
+}
+@font-face{
+  font-family: sweet;
+  src: url(Sweetgentle Free.otf);
+}

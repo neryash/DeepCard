@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inputsCss.css">
+    <title>DeepCard</title>
+  </head>
+  <body>
+    <div class="cont" id="firstLayout">
+      <h1>Hi! What are you making?</h1>
+        <div class="multiSelect">
+          <div class="buttonUp chev"><h3 onclick="upValue()">^</h3></div>
+          <div class="valueDisplay" id="showValue"><h3 id="valueName" class="valueName">An Aniversary Card</h3></div>
+          <div class="buttonDown chev"><h3 onclick="downValue()">&#8964</h3></div>
+        </div>
+        <div class="btn" id="firstNext" onclick="toSecond()">
+          <h4>Next</h4>
+          </div>
+    </div>
+    <div class="cont" id="secondLayout">
+      <h1>Thats cool! What's your name?</h1>
+      <input type="text" class="nameInput" id="yourName"/>
+        <div class="btn" onclick="toThird()">
+          <h4>Next</h4>
+          </div>
+    </div>
+    <div class="cont" id="thirdLayout">
+      <h1>Hello there! who is the lucky recipient?</h1>
+      <input type="text" class="nameInput" id="recName"/>
+        <div class="btn" onclick="toFourth()">
+          <h4>Next</h4>
+          </div>
+    </div>
+    <div class="cont" id="fourthLayout">
+      <h1 id="perMess">Give us a few words to start off</h1>
+      <input type="text" class="nameInput" id="keyword"/>
+      <div class="checkboxCont">
+        <input type="checkbox" name="" value="" class="checkInput" id="aitoggle"/>
+        <p class="checkboxText">Don't let the AI complete my card</p>
+      </div>
+      <div style="display:flex; margin-left:auto; margin-right:auto; margin-top:0;">
+        <div class="btn" onclick="finish()">
+          <h4>Finish</h4>
+          </div>
+          <div class="btn" onclick="randomWords()">
+            <h4>Randomize</h4>
+            </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="inputes.js"></script>
+  </body>
+</html>

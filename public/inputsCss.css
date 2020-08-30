@@ -1,0 +1,143 @@
+html, body{
+  width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  overflow: hidden;
+  overflow-x:hidden;
+}
+h1{
+  width:100%;
+  text-align:center;
+  font-size: 50px;
+  color:#ffffff;
+  font-family: Arial;
+}
+.cont{
+  margin-top: 12%;
+  height: 50%;
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s all;
+  position: absolute;
+  left:0;
+}
+#firstLayout{
+  left:0;
+}
+#secondLayout{
+  left:100%;
+}
+#thirdLayout{
+  left:100%;
+}
+#fourthLayout{
+  left:100%;
+}
+.multiSelect{
+  color: white;
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  margin-top: 30px;
+}
+.valueDisplay{
+  font-family: Arial;
+  font-size: 30px;
+  overflow: hidden;
+  color:#8affa9;
+  margin:0;
+  padding:0;
+}
+.chev > h3{
+  color: #ffffff;
+  font-size: 50px;
+  padding:0;
+  margin:0;
+  transition: 0.3s all;
+}
+.chev > h3:hover{
+  color:#8affa9;
+}
+.buttonUp{
+  font-weight: bold;
+  user-select: none;
+}
+.buttonDown{
+  font-weight: lighter;
+  user-select: none;
+}
+.btn{
+  width:150px;
+  height: 75px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #8affa9;
+  font-size: 20px;
+  font-family: Arial;
+  border-radius: 10px;
+  border:2px solid #000000;
+  transition: 0.4s all;
+  font-weight:bold;
+  display: flex;
+  align-self: center;
+  margin-top: 50px;
+  user-select: none;
+}
+.btn > h4{
+  margin: auto;
+}
+.btn:hover{
+  border:2px solid #8affa9;
+  color:#8affa9;
+  background-color: #000000;
+}
+.nameInput{
+  width: 400px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: transparent;
+  font-size:40px;
+  font-family: Arial;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition:border-bottom 0.5s, color 0.5s,margin-left 0.05s;
+}
+.nameInput:focus{
+  outline: none;
+  border-bottom: 2px solid #8affa9;
+  color:#8affa9;
+}
+.valueName{
+  position: relative;
+  top:0;
+  margin: 0;
+  transition: 0.1s top;
+}
+.checkboxCont{
+  display: flex;
+  color:white;
+  flex-direction: row;
+  margin:auto;
+  margin-top:30px;
+  margin-bottom: 0;
+  font-family: Arial;
+}
+.checkboxText{
+  margin: 0;
+  margin-left: 15px;
+}
+.checkInput{
+  background-color: #8affa9;
+  border:2px solid: #000000;
+}
+
+.checkInput:active{
+  background-color: #000000;
+  border:2px solid: #8affa9;
+}

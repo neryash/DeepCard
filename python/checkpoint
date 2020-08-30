@@ -1,0 +1,2 @@
+model_checkpoint_path: "anniversary.ckpt"
+all_model_checkpoint_paths: "anniversary.ckpt"

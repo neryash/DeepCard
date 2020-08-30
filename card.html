@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link href="card.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class='cardCont'>
+      <div class="downFace">
+        <div class="wishesText">
+          <h3 class="whishes"></h3>
+        </div>
+        <div class="from">
+          <h2 class="fromDisplay">From Me</h2>
+        </div>
+      </div>
+      <div class="upFace">
+        <div class="textCont">
+          <h1 class="to">To</h1>
+          <h1 class="toName" id="toName"></h1>
+        </div>
+        <div class="company">
+          <h5 class="credit">Made With DeepCard</h5>
+          <h5 class="instructions">Hover to open</h5>
+        </div>
+      </div>
+    </div>
+    <div class="hoverTarget" onmouseover="openCard()" onmouseout="closeCard()">
+
+    </div>
+    <div class="toolbar">
+      <div class="share">
+
+        <img src="/shareImg.png" class="shareImg" onclick="shareSite()"/>
+      </div>
+    </div>
+    <script src="card.js"></script>
+  </body>
+</html>
